@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent-color: #94d2bd;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.cv-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cv-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.cv-photo img {
+    width: 120px;
+    height: 160px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.cv-info h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.cv-info p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cv-skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cv-skills li {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.cv-certification {
+    margin-top: 30px;
+}
+
+.cv-certification h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.certification-item {
+    margin-bottom: 20px;
+}
+
+.certification-item h3 {
+    font-size: 18px;
+    color: #2e2e2e;
+    margin-bottom: 5px;
+}
+
+.certification-item p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cv-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .cv-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cv-photo img {
+        margin: 0 0 15px 0;
+    }
+}
